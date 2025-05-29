@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samia Cosmetics অর্ডার ফর্ম</title>
+  <style>
+    body { font-family: sans-serif; background-color: #f9f9f9; padding: 20px; max-width: 600px; margin: auto; }
+    h2 { text-align: center; color: #e91e63; }
+    form { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    label { display: block; margin-top: 10px; }
+    input, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+    button { background-color: #e91e63; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; margin-top: 15px; cursor: pointer; }
+    .instructions { background: #ffeef0; padding: 10px; border-left: 4px solid #e91e63; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h2>Samia Cosmetics অর্ডার ফর্ম</h2>
+  <form name="order" method="POST" data-netlify="true">
+    <label>আপনার নাম:</label>
+    <input type="text" name="name" required>
+
+    <label>মোবাইল নাম্বার:</label>
+    <input type="tel" name="phone" required>
+
+    <label>ঠিকানা:</label>
+    <textarea name="address" required></textarea>
+
+    <label>অর্ডার করা পণ্যের নাম:</label>
+    <input type="text" name="product" required>
+
+    <div class="instructions">
+      <strong>💳 পেমেন্ট করুন:</strong><br>
+      বিকাশ নাম্বার: <strong>01719793375</strong><br>
+      পেমেন্ট অপশন: Send Money<br>
+      পেমেন্ট করার পর আমাদের সাথে যোগাযোগ করুন।
+    </div>
+
+    <button type="submit">অর্ডার করুন</button>
+  </form>
+</body>
+</html>
